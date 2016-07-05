@@ -1,9 +1,28 @@
 {
-  "name": "WebSocket-chat",
+  "name": "websocket-chat",
   "version": "0.0.1",
   "description": "socket.io like chat example using ws",
   "dependencies": {
     "express": "^4.14.0",
     "ws": "^1.1.1"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaledsaikat/websocket-chat.git"
+  },
+  "keywords": [
+    "WebSocket",
+    "chat"
+  ],
+  "author": "Khaled Hossain",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/khaledsaikat/websocket-chat/issues"
+  },
+  "homepage": "https://github.com/khaledsaikat/websocket-chat#readme"
 }

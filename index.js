@@ -9,7 +9,7 @@ var express = require('express'),
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-    res.sendfile('index.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 wss.broadcast = function broadcast(data) {
@@ -20,7 +20,6 @@ wss.broadcast = function broadcast(data) {
 
 wss.on('connection', function(ws) {
     ws.on('message', function(msg) {
-        console.log(msg);
         data = JSON.parse(msg);
         if (data.message) wss.broadcast('<strong>' + data.name + '</strong>: ' + data.message);
     });
